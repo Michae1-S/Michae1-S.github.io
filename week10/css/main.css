@@ -1,0 +1,49 @@
+body {
+	background-color: #3163bf;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color:white;
+}
+
+.header {
+	background-color: green;
+}
+
+.footer {
+	background-color: white;
+}
+
+.hero{
+	background-color: yellow;
+	background-image: url("../sunset.jpg");
+ 	background-color: #cccccc;
+ 	min-height: 500px;
+}
+
+.border {
+	border-style: solid;
+	border-color: blue;
+}
+
+.sm-image {
+	width: 100%;
+}
+
+.column {
+	width: 33%;
+	float: left;
+}
+
+.clear {
+	 clear: both;
+}
+
+.nav-item {
+	list-style-type: none;
+	display: inline-block;
+}
