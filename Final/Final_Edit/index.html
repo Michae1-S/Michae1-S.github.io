@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+      .border {
+        border-style: solid;
+      }
+
+      .logo {
+        width: 100%;
+      }
+
+      .display {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      .display-sm {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      .catalog
+      {
+        width: 15%;
+      }
+
+      .nav-tab-border {
+        border-left: 1px solid lightgrey;
+      }
+
+      .hero {
+        min-height: 10em;
+      }
+
+      .nav-tab-link {
+        color: black;
+      }
+
+      .white-bg {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .hero-image {
+        background-image: url("Assets/Dark_Texture.jpg");
+      }
+
+      .bg-image {
+        background-image: url("Assets/Texture.jpg");
+        background-size: cover;
+      }
+
+      .bg-image2 {
+        background-image: url("Assets/Dark_Texture.jpg");
+        background-size: cover;
+      }
+
+      .bg-image3 {
+        background-image: url("Assets/Texture_2.jpg");
+        background-size: cover;
+      }
+
+      .grid-padding {
+        padding: 0.5em;
+      }
+
+      .icon {
+        width:70%;
+      }
+
+      .search-container {
+          position: relative;
+      }
+
+      .search-input {
+          height: 40px;
+          border-radius: 20px;
+          padding-left: 40px;
+          border: none;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-icon {
+          position: absolute;
+          top: 50%;
+          left: 15px;
+          transform: translateY(-50%);
+          color: #888;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="bg-image">
+
+<!--nav start-->
+      <div class="container-fluid p-4 bg-image3">
+        <div class="row">
+
+          <div class="col-1">
+            <img src="Assets/logo.png" class="logo">
+          </div>
+
+<!--search bar start-->
+          <div class="col-11">
+
+            <div class="container-fluid">
+
+              <div class="row border">
+                <div class="col-md-10">
+                  <div class="search-container">
+                    <input type="text" class="form-control search-input" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                  </div>
+                </div>               
+
+                <div class="col-1">
+                  <ul class="nav">
+                    <button type="button" class="btn btn-light rounded-5"><img src="Assets/Profile.svg" class="img-fluid icon"></button>
+                  </ul>
+                </div>
+
+                <div class="col-1">
+                  <ul class="nav">
+                    
+                    <button type="button" class="btn btn-light rounded-5"><img src="Assets/Cart.svg" class="img-fluid icon"></button>
+                  </ul>
+                </div>
+              </div>                
+            </div>             
+
+<!--search bar end-->
+
+              <div class="container-fluid overflow-hidden">
+
+                <div class="row border">
+
+                  <div class="col-7" style="padding:0px;">
+
+                    <ul class="nav white-bg">
+                      <li class="nav-item nav-tab-border pe-5">
+                        <a class="nav-link active nav-tab-link" aria-current="page" href="#">New</a>
+                      </li>
+                      <li class="nav-item nav-tab-border ms-5 pe-5">
+                        <a class="nav-link nav-tab-link" aria-current="page" href="#">Browse</a>
+                      </li>
+                      <li class="nav-item nav-tab-border ms-5 pe-5">
+                        <a class="nav-link nav-tab-link" aria-current="page" href="#">Deals</a>
+                      </li>
+                      <li class="nav-item nav-tab-border ms-5 pe-5">
+                        <a class="nav-link nav-tab-link" aria-current="page" href="#">Categories</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                    <div class="col-5">
+                    </div>
+
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>  
+<!--nav end-->
+
+      <div class="container-fluid">
+        <!--CHANGE FOR USING OG BACKGROUND IMAGE, RN IT BLEEDS WITH THE DARK TEXTURE-->
+        <div class="row grid-padding">
+          <div class="col">
+          </div>          
+        </div>
+      </div>
+
+<!--row display start-->
+      <div class="container-fluid bg-image2">
+        <div class="row">
+          
+          <div class="col">
+          </div>
+
+          <div class="col display">
+            <img src="Assets/Stickers_Mockup.jpg" class="img-fluid rounded-5">
+          </div>
+
+          <div class="col display img-fluid">
+            <img src="Assets/Angler.jpg" class="img-fluid rounded-5">
+          </div>
+
+          <div class="col display img-fluid">
+            <img src="Assets/Pin_Mockup.jpg" class="img-fluid rounded-5">
+          </div>
+
+          <div class="col">
+          </div>
+
+        </div>
+      </div>  
+<!--row display end-->
+
+      <div class="container-fluid">
+        <!--CHANGE FOR USING OG BACKGROUND IMAGE, RN IT BLEEDS WITH THE DARK TEXTURE-->
+        <div class="row grid-padding">
+          <div class="col">
+          </div>
+        </div>
+      </div>
+
+<!--bot display start-->
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-2 border">
+            <img src="Assets/Stickers_Mockup_1.jpg" class="rounded-5 float-start img-fluid">
+          </div>
+
+          <div class="col-4 border">
+            item data here
+          </div>
+
+          <div class="col-2 border">
+            <img src="Assets/Stickers_Mockup_2.jpg" class="rounded-5 float-start img-fluid">
+          </div>
+
+          <div class="col-4 border">
+            item data here
+          </div>
+
+        </div>
+      </div>
+<!--bot display end-->      
+
+
+<!--about us start-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col border">
+            About Us here
+          </div>
+
+        </div>
+      </div>
+<!--about us end-->     
+    </div>
+
+
+
+
+
+
+
+
+      <!--end of content; bootstrap javascript below -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
