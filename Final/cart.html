@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept" rel="stylesheet">
+
+    <style>
+
+      .acumin {
+        font-family: "Acumin Variable Concept", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings:;
+        color: black;
+      }
+
+      .font0 {
+        font-size: 16px;
+      }
+
+      .font1 {
+        font-size: 18px;
+      }
+
+      .font2 {
+        font-size: 24px;
+      }
+
+      .about-font {
+        font-size: 32px;
+      }
+
+      .font3 {
+        font-size: 36px;
+      }
+
+      .font4 {
+        font-size: 42px;
+      }
+
+      .font5 {
+        font-size: 144px;
+      }
+
+      .border {
+        border-style: solid;
+      }
+
+      .logo {
+        width: 5.5em;
+      }
+
+      .base-height {
+        height: 40px;
+      }
+
+      .base-height2 {
+        height: 46px;
+      }
+
+      .p-height {
+        height: 30px;
+      }
+
+      .p-height-sm {
+        height: 15px;
+      }
+
+      .padding-cut {
+        padding-top: 2.5px;
+      }
+
+      .p-right {
+        padding-right: 30px;
+      }
+
+      .button-scale {
+        height: 45px;
+      }
+
+      .button-scale-sm {
+        height: 32px;
+      }
+
+      .wide {
+        padding-left:1em;
+        padding-right:1em;
+        margin-left:1em;
+      }
+
+      .wide2 {
+        padding-left:1em;
+        padding-right:1em;
+      }
+
+      .no-marg-base {
+        margin-left:0em;
+        margin-right:0em;
+      }
+
+      .no-marg {
+        margin:0px;
+        padding-left:18px;
+        padding-right:18px;
+      }
+
+      .no-marg2 {
+        margin:0px;
+        padding-left:8px;
+        padding-right:8px;
+      }
+
+      .margin-top-1 {
+        margin-top:35px;
+      }
+
+      .margin-top-2 {
+        margin-top:39px;
+      }
+
+      .no-padding {
+        padding:0px;
+      }
+
+      .border-stroke {
+        border:3px solid;
+        border-color: #CD97A7;
+      }
+
+      .browse {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .cart {
+        width: 132px;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .display {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      .display-sm {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      .catalog
+      {
+        width: 15%;
+      }
+
+      .nav-tab-border {
+        border-left: 1px solid lightgrey;
+      }
+
+      .hero {
+        min-height: 10em;
+      }
+
+      .nav-tab-gutter {
+        padding-left: 40px;
+      }
+
+      .nav-tab-link {
+        color: black;
+      }
+
+      .white-bg {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .white-bg-fade {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .hero-image {
+        background-image: url("Assets/Dark_Texture.jpg");
+      }
+
+      .bg-image {
+        background-image: url("Assets/Texture.jpg");
+        background-size: cover;
+      }
+
+      .bg-image2 {
+        background-image: url("Assets/Dark_Texture.jpg");
+        background-size: cover;
+      }
+
+      .bg-image3 {
+        background-image: url("Assets/Texture_2.jpg");
+        background-size: cover;
+      }
+
+      .grid-padding {
+        padding: 0.5em;
+      }
+
+      .icon {
+        width:2em;
+      }
+
+      .search-container {
+          position: relative;
+      }
+
+      .search-input {
+        height: 40px;
+        border-radius: 20px;
+        padding-left: 55px;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: #888;
+      }
+
+      .form-control {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .btn-light {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .frame-dark {
+        background-color: rgba(23, 23, 34, 0.9);
+      }
+
+      .frame-height {
+        height: 100vh;
+        max-height: 883px;
+      }
+
+      .frame-height2 {
+        height: 100vh;
+      }
+
+      .cart-height {
+        height: 180px;
+      }
+
+      .page-header {
+        width: 44.3%;
+      }
+
+      .page-limit {
+        max-width: 1350px;
+      }
+
+      .page-limit2 {
+        width: 735px;
+      }
+
+      .search-limit {
+        padding-right: 20px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="bg-image">
+
+<!--nav start-->
+      <div class="container-fluid p-4 bg-image3">
+        <div class="row">
+
+          <div class="col-1">
+            <a href="index.html">
+              <img src="Assets/logo.png" class="logo">
+            </a>
+          </div>
+
+<!--search bar start-->
+          <div class="col-11">
+
+            <div class="container-fluid">
+
+              <div class="row">
+                <div class="col-md-10 g-0 search-limit">
+                  <div class="search-container">
+                    <input type="text" class="form-control search-input acumin font1" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                  </div>
+                </div>               
+
+                <div class="col-2 g-0">
+                  <ul class="nav justify-content-end">
+                    <button type="button" class="btn btn-light rounded-5 button-height wide"><img src="Assets/Profile.svg" class="icon"></button>
+                    
+                    <button type="button" class="btn btn-light rounded-5 button-height wide">
+                      <a href="cart.html" class="link-underline link-underline-opacity-0">
+                      <img src="Assets/Cart.svg" class="icon">
+                      </a>
+                    </button>
+                </div>
+              </div>                
+            </div>             
+
+<!--search bar end-->
+
+              <div class="container-fluid">
+                <div class="row grid-padding">
+                  <div class="col">
+                  </div>          
+                </div>
+              </div>
+
+              <div class="container-fluid overflow-hidden">
+
+                <div class="row">
+
+                  <div class="col-7 page-limit2" style="padding:0px;">
+
+                    <ul class="nav white-bg rounded-5 base-height">
+                      <li class="nav-item nav-tab-gutter pe-5">
+                        <a class="nav-link active nav-tab-link acumin font2 padding-cut" aria-current="page" href="#">New</a>
+                      </li>
+                      <li class="nav-item nav-tab-border nav-tab-gutter pe-5">
+                        <a class="nav-link nav-tab-link acumin font2 padding-cut" aria-current="page" href="browse.html">Browse</a>
+                      </li>
+                      <li class="nav-item nav-tab-border nav-tab-gutter pe-5">
+                        <a class="nav-link nav-tab-link acumin font2 padding-cut" aria-current="page" href="#">Deals</a>
+                      </li>
+                      <li class="nav-item nav-tab-border nav-tab-gutter">
+                        <a class="nav-link nav-tab-link acumin font2 padding-cut" aria-current="page" href="#">Categories</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                    <div class="col-5">
+                    </div>
+
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>  
+<!--nav end-->
+
+      <div class="container-fluid">
+        <div class="row grid-padding">
+          <div class="col">
+          </div>          
+        </div>
+      </div>
+
+<!--browse section start-->
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-1 frame-dark frame-height rounded-end-5">
+          </div>
+            <!--cart header start-->
+              <div class="col-7 page-limit">
+                <div class="container-fluid">
+                  <div class="row page-header">
+                    <div class="col">
+                      <div class="nav-item nav-tab-gutter pe-5 white-bg rounded-5 base-height2 border-stroke">
+                        <p class="acumin font2 padding-cut text-center">Shopping Cart</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!--cart header end-->
+
+            <!--cart items start-->
+                <div class="container-fluid">
+                  <div class="row grid-padding">
+                    <div class="col">
+                    </div>
+                  </div>
+                </div>
+
+            <div class="container-fluid white-bg rounded-5">
+              <div class="row">
+
+                <div class="container-fluid">
+                  <div class="row grid-padding">
+                    <div class="col">
+                    </div>
+                  </div>
+                </div>
+ 
+                <!--cart item 1 start-->
+
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-2">
+                      <img src="Assets/cat1_sm.jpg" class="rounded-pill float-start cart border-stroke">
+                    </div>
+            
+                    <div class="col-8 p-height g-0 margin-top-1">
+                      <div class="nav">
+                          <p> <a href="#" class="acumin font2 rounded-5 no-marg link-underline link-underline-opacity-0">Key Chain A</a></p>
+                      </div>
+                    </div>
+
+                    <div class="col-2 p-height g-0 margin-top-2">
+                      <div class="container">
+                        <div class="row no-marg">
+                          <ul class="nav justify-content-center">
+                            <div class="rounded-5 button-scale-sm border-stroke wide2">
+                              <p class="acumin font1 text-center">$10.00</p>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div> 
+                </div>
+
+                <!--cart item 1 end-->
+
+                <div class="container-fluid">
+                  <div class="row grid-padding">
+                    <div class="col">
+                    </div>
+                  </div>
+                </div>
+
+                <!--cart item 2 start-->
+
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-2">
+                      <img src="Assets/Stickers_Mockup_2_sm.jpg" class="rounded-pill float-start cart border-stroke">
+                    </div>
+            
+                    <div class="col-8 p-height g-0 margin-top-1">
+                      <div class="nav">
+                          <p> <a href="#" class="acumin font2 rounded-5 no-marg link-underline link-underline-opacity-0">Sticker Set B</a></p>
+                      </div>
+                    </div>
+
+                    <div class="col-2 p-height g-0 margin-top-2">
+                      <div class="container">
+                        <div class="row no-marg">
+                          <ul class="nav justify-content-center">
+                            <div class="rounded-5 button-scale-sm border-stroke wide2">
+                              <p class="acumin font1 text-center">$10.00</p>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div> 
+                </div>
+
+                <!--cart item 2 end-->
+
+                <div class="container-fluid">
+                  <div class="row grid-padding">
+                    <div class="col">
+                    </div>
+                  </div>
+                </div>
+
+                <!--cart item 3 start-->
+
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <div class="col-2">
+                      <img src="Assets/cat2_sm.jpg" class="rounded-pill float-start cart border-stroke">
+                    </div>
+            
+                    <div class="col-8 p-height g-0 margin-top-1">
+                      <div class="nav">
+                          <p> <a href="#" class="acumin font2 rounded-5 no-marg link-underline link-underline-opacity-0">Key Chain C</a></p>
+                      </div>
+                    </div>
+
+                    <div class="col-2 p-height g-0 margin-top-2">
+                      <div class="container">
+                        <div class="row no-marg">
+                          <ul class="nav justify-content-center">
+                            <div class="rounded-5 button-scale-sm border-stroke wide2">
+                              <p class="acumin font1 text-center">$10.00</p>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div> 
+                </div>
+
+                <!--cart item 3 end-->
+
+                <div class="container-fluid">
+                  <div class="row grid-padding">
+                    <div class="col">
+                    </div>
+                  </div>
+                </div>
+
+                <!--cart data start-->
+
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-8 p-height g-0 cart-height">
+                    </div>
+                    <div class="col-4 p-height g-0">
+                      <ul>
+                        <div class="nav justify-content-end p-right">
+                          <p class="acumin font1 rounded-5 no-marg">Subtotal: $30.00</p>
+                        </div>
+                        <div class="nav justify-content-end p-right">
+                          <p class="acumin font1 rounded-5 no-marg">Sales Tax: $2.63</p>
+                        </div>
+                        <div class="nav justify-content-end p-right">
+                          <p class="acumin font2 rounded-5 no-marg">Total: $32.63</p>
+                        </div>
+                        <div class="">
+                          <p class=""></p>
+                        </div>
+
+                        <div class="container">
+                          <div class="row no-marg">
+                            <ul class="nav justify-content-end">
+                              <button type="button" class="btn btn-light rounded-5 button-height border-stroke">
+                                <p class="no-marg2"> <a href="purchase_screen.html" class="acumin font2 white-bg rounded-5 link-underline link-underline-opacity-0">Buy Now</a></p>
+                              </button>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </ul>
+
+                    </div>                
+                  </div>
+                </div>
+
+              </div>
+
+                <!--cart data end-->
+
+            </div> 
+          </div>
+
+                <!--cart items end-->
+
+              <div class="col-3 frame-height">
+              </div>
+
+              <div class="col-1 frame-height">
+              </div>
+
+              <div class="container-fluid">
+                <div class="row grid-padding">
+                  <div class="col">
+                  </div>          
+                </div>
+              </div>
+
+
+              </div>
+
+        </div>
+      </div>  
+<!--browse section end-->
+
+<!--about us start-->
+      <div class="container-fluid white-bg-fade rounded-top-5">
+        <div class="row">
+          <div class="col gy-3">
+            <div class="nav justify-content-center">
+              <p> <a href="#" class="acumin about-font rounded-5 no-marg link-underline link-underline-opacity-0">About/Contact Us</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+<!--about us end-->     
+    </div>
+
+
+
+
+
+
+
+
+      <!--end of content; bootstrap javascript below -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
